@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_Screen"
+    android:background="@drawable/backgroundregister">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_login"
+        android:text="Back"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:paddingHorizontal="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="58dp">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:textSize="14dp"
+            android:hint="Username"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:textSize="14dp"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/baseline_info_24"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:textSize="14dp"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/baseline_contact_mail_24"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/birth"
+            android:textSize="14dp"
+            android:hint="Date Of Birth"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/baseline_calendar_month_24"
+            android:drawablePadding="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_register"
+            android:text="Register Now!"
+            android:backgroundTint="#BB0000"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:paddingHorizontal="40dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

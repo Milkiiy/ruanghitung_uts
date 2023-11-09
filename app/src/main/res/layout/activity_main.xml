@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundlogin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello, Welcome Back!"
+        android:layout_above="@+id/username"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_centerInParent="true"
+        android:textSize="14dp"
+        android:hint="Username"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="14dp"
+        android:id="@+id/password"
+        android:layout_below="@id/username"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/createNewOne"
+        android:layout_height="wrap_content"
+        android:text="Dont have account? Create a new One!"
+        android:layout_below="@+id/password"
+        android:textAlignment="center"
+        android:layout_marginTop="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createNewOne"
+        android:id="@+id/socialIcon"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="150dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_register"
+            android:text="Register"
+            android:backgroundTint="#BB0000"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="40dp"
+            android:layout_margin="20dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:layout_below="@id/password"
+            android:text="Login"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="40dp"
+            android:layout_margin="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

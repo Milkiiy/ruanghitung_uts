@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">UTS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="bmi">
+        <item>Laki-Laki</item>
+        <item>Wanita</item>
+    </string-array>
+
+    <string-array name="suhu">
+        <item>Celcius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+    <string-array name="uang">
+        <item>Dollar AS</item>
+        <item>Real Brazil</item>
+        <item>Rupee Srilangka</item>
+    </string-array>
+
+    <string-array name="calc">
+        <item>Kurang</item>
+        <item>Tambah</item>
+        <item>Kali</item>
+        <item>Bagi</item>
+    </string-array>
+</resources>
